@@ -35,9 +35,11 @@ $matches=[
     <main>
         <h1 class="text-uppercase text-center mt-2">Partite di oggi</h1>
         <div class="text-center my-4">
-            <?php foreach( $matches as $key => $value )
-            echo($value["homeTeam"]. " - ". $value["awayTeam"]. " | ". $value["homePoints"]. "-". $value["awayPoints"]. "<br>")
-               ?>
+            <?php 
+            foreach( $matches as $key => $value ){
+            echo($value["homeTeam"]. " - ". $value["awayTeam"]. " | ". $value["homePoints"]. "-". $value["awayPoints"]. "<br>");
+            }               
+            ?>
         </div>
       
     </main>
